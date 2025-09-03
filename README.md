@@ -46,7 +46,7 @@ The design supports a subset of RISC-V instructions and executes each instructio
 
 ## Test Instructions
 - Use the provided **testbench** to verify the RISC-V core functionality.
-- Modify instructions in instruction memory for custom tests.
+- Modify instructions in "memfile.hex" for custom tests.
 - Ensure that each instruction uses separate registers to prevent conflicts during simulation.
 
 ---
