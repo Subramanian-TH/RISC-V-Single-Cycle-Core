@@ -48,6 +48,13 @@ The design supports a subset of RISC-V instructions and executes each instructio
 - Ensure that each instruction uses separate registers to prevent conflicts during simulation.
 
 ---
+
+## Simulation Results
+
+<img width="1114" height="1653" alt="stitched-image-1756928616572" src="https://github.com/user-attachments/assets/c0b47c42-1fbc-4f0b-9c71-06aeba6596f1" />
+
+---
+
 ## References
 
 1. Sarah L. Harris and David Money Harris, *Digital Design and Computer Architecture: RISC-V Edition*, Morgan Kaufmann, 2021.  
