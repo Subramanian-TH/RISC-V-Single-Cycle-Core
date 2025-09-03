@@ -27,9 +27,6 @@ The design supports a subset of RISC-V instructions and executes each instructio
 
 ---
 
-
----
-
 ## Getting Started
 
 ### Prerequisites
