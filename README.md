@@ -34,10 +34,11 @@ The design supports a subset of RISC-V instructions and executes each instructio
 - Basic knowledge of **Verilog HDL** and **RISC-V ISA**.
 
 ### How to Run
-1. Open Vivado and create a project or run the Tcl script in `scripts/create_project.tcl`.
-2. Add all files from `Src/` to the project.
-3. Simulate using `Single_Cycle_Top_Tb.v` in `Src/`.
-4. Synthesize and implement for your FPGA board (e.g., Zybo Z7-10, Nexys 4 DDR).
+1. Open Vivado and navigate to the scripts folder in your project using `cd RISC-V-Single-Cycle-Core/scripts`.
+2. Run the Tcl script to create the project `source RISC_V_single_cycle_core.tcl`.
+3. Add the memory file (memfile.hex) to the Simulation Sources.
+4. Simulate using `Single_Cycle_Top_Tb.v` in `Src/`.
+5. Synthesize and implement for your FPGA board (e.g., Zybo Z7-10, Nexys 4 DDR).
 
 ---
 
@@ -62,7 +63,7 @@ This project is **open-source** and available under the [MIT License](LICENSE).
 
 ## Author
 **Subramanian T H**  
-ECE Student (Final year) - Sri Venkateswaraa College of Technology | VLSI Enthusiast
+Final Year ECE Student - Sri Venkateswaraa College of Technology | VLSI Enthusiast
 - LinkedIn: linkedin.com/in/subramanian-t-h/  
 - Email: subramanith.ece@gmail.com
 
