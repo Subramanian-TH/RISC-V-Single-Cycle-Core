@@ -1,0 +1,18 @@
+# Vivado junk files
+*.jou
+*.log
+*.str
+*.html
+*.xml
+*.backup.log
+*.csv
+
+# Vivado build folders
+.Xil/
+.runs/
+.sim/
+.hw/
+.cache/
+.ip_user_files/
+.webtalk/
+
