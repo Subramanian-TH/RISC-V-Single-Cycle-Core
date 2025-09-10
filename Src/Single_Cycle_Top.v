@@ -1,11 +1,12 @@
 module Single_Cycle_Top(
-input clk,rst
+input clk, rst,
+output [15:0] ALU_Result_Out
     );
     
     wire [31:0] PC_Top, RD_Instr, RD1_Top, Imm_Ext_Top, ALUResult, ReadData, PCPlus4, RD2_Top, SrcB, Result, PCTarget, PCNext;
-    wire [2:0] ALUcontrol_Top, MemWrite;
-    wire RegWrite, ALUSrc,PCSrc, Zero, Branch_wire;
-    wire [1:0] ImmSrc, ALUOp_wire, ResultSrc;
+    wire [2:0] ALUcontrol_Top;
+    wire RegWrite, ALUSrc, PCSrc, Zero, MemWrite;
+    wire [1:0] ImmSrc, ResultSrc, ALUOp ;
      
     Mux Mux_to_PC(
     .a(PCPlus4),
@@ -78,7 +79,8 @@ input clk,rst
     Control_Unit_Top Control_Unit(
     .Zero(Zero),
     .Op(RD_Instr[6:0]), 
-    .funct7(RD_Instr[6:0]),
+    .ALUOp(ALUOp),
+    .funct7(RD_Instr[5]),
     .funct3(RD_Instr[14:12]),
     .ALUControl(ALUcontrol_Top),
     .ResultSrc(ResultSrc), 
@@ -106,5 +108,8 @@ input clk,rst
     .s(ResultSrc),
     .r(Result)
     ); 
+    
+    assign ALU_Result_Out = ALUResult;
+       
        
 endmodule

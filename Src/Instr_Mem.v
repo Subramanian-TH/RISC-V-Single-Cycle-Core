@@ -4,8 +4,9 @@ input rst,
 output [31:0] RD
     );
     
-reg [31:0] mem [1023:0];
     
+reg [31:0] mem [1023:0];
+
 assign RD = (rst == 1'b1) ? 32'h00000000 : mem[A[31:2]] ;
 
 initial begin

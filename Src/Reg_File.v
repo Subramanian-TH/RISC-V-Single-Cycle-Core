@@ -7,7 +7,7 @@ output [31:0] RD1, RD2
     );
     
 reg [31:0] registers [31:0];
-integer i;
+
 // Read operation
 assign RD1 = (rst) ? 32'h00000000 : registers[A1];
 assign RD2 = (rst) ? 32'h00000000 : registers[A2];
