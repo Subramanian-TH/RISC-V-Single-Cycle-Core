@@ -51,7 +51,7 @@ The design supports a subset of RISC-V instructions and executes each instructio
 
 ## Simulation Results
 
-<img width="1114" height="1653" alt="stitched-image-1756928616572" src="https://github.com/user-attachments/assets/c0b47c42-1fbc-4f0b-9c71-06aeba6596f1" />
+<img width="1114" height="1630" alt="stitched-image-1758532915931" src="https://github.com/user-attachments/assets/881ae52d-14e1-41da-a030-4d029041f76e" />
 
 ---
 
